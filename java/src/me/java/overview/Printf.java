@@ -20,24 +20,24 @@ public class Printf {
         System.out.printf("month = %2d, day = %2d\n", month, day);
 
         // int
-        System.out.printf("%d\n", i);
-        System.out.printf("%10d\n", i); // 오른쪽으로 정렬
-        System.out.printf("%-10d\n", i); // 왼쪽으로 정렬
-        System.out.printf("%010d\n", i);
-        System.out.printf("%o\n", i);
-        System.out.printf("%x\n", i);
-        System.out.printf("%X\n", i);
+        System.out.printf("%d\n", i); // 10
+        System.out.printf("%10d\n", i); // 오른쪽으로 정렬 // 10칸의 공간을 출력하는데에 쓰겠다. ________10
+        System.out.printf("%-10d\n", i); // 왼쪽으로 정렬 // 10________
+        System.out.printf("%010d\n", i); // 0000000010
+        System.out.printf("%o\n", i); // 12
+        System.out.printf("%x\n", i); // a
+        System.out.printf("%X\n", i); // A
         System.out.printf("%n"); // System.out.me.java.overview.printf(): 포맷에 맞춰 문장을 출력하는 함수
         System.out.println(); // System.out.println(): 문장 마지막에 엔터를 포함하여 출력하는 함수
 
         // float
-        System.out.printf("%f\n", f);
-        System.out.printf("%.2f\n", f);
-        System.out.printf("%.8f\n", f); // 부동 소수점의 오차 (**)
-        System.out.printf("%5.2f\n", f);
-        System.out.printf("%-5.2f\n", f);
-        System.out.printf("%e\n", f);
-        System.out.printf("%E\n", f);
+        System.out.printf("%f\n", f); // 12.340000
+        System.out.printf("%.2f\n", f); // 12.34
+        System.out.printf("%.8f\n", f); // 부동 소수점의 오차 (**)  // 12.34000015
+        System.out.printf("%5.2f\n", f); // 12.34
+        System.out.printf("%-5.2f\n", f); //12.34
+        System.out.printf("%e\n", f); // 1.234000e+01 //지수표기법
+        System.out.printf("%E\n", f); // 1.234000E+01 //지수표기법
         System.out.printf("%30.3e\n", f);
         System.out.printf("%30.3E\n", f);
         System.out.println();
